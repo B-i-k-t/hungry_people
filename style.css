@@ -160,17 +160,21 @@ body {
 }
 
 /* ====== block__img ======*/
-.block__img {
+.block__image_container{
     width: 50%;
+    text-align: center;
+    overflow: hidden;
+}
+.block__img {
     text-align: right;
     position: relative;
+    max-width: 475px;
+    height: auto;
+    padding-right: 125px; 
 }
 .block__image {    
-    width: 475px;
-    height: 475px;
     filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
-    border-radius: 5px;
-    padding-right: 125px;   
+    border-radius: 5px;  
 }
 
 .block__img--left {
