@@ -281,18 +281,48 @@ body {
     margin: 5px;
     background: #E5E5E5;
 }
-.book__btn {
+.order__btn {
     margin: 5px;
     width: 100%;
     height: 60px;
     background: #E8C300;
     border-radius: 5px;
 }
-.book__btn_text {
+.order__btn_text {
     font-weight: 700;
     font-size: 12px;
     line-height: 1.67;
     align-items: center;
     text-align: center;
     color: #FFFFFF;
+}
+.booking__schedule {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1;
+    align-items: center;
+    text-align: center;
+    color: rgba(51, 51, 51, 0.5);
+    border-radius: 5px;
+}
+
+/* ====== specialties ======*/
+.specialties {
+    background: url(/img/specialtys-bg.png) 50% 50% no-repeat fixed;
+    background-size: cover;
+}
+.specialties__title {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 1.17;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.5em;
+    color: #FFFFFF;
+    height: 100px;
+}
+.specialties__content {
+    display: flex;
+    padding-bottom: 100px;
 }
