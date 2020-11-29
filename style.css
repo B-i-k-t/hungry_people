@@ -380,3 +380,44 @@ body {
     line-height: 1;
     color: #333333;
 }
+
+/* ====== private events ======*/
+.events {
+    background: url(/img/specialtys-bg.png) 50% 50% no-repeat fixed;
+    background-size: cover;
+}
+.events__title {
+    height: 100px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.17;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.events__content {
+    display: flex;
+    justify-content:space-between;
+}
+.events__footer {
+    height: 100px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    align-items: center;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+
+/* ====== photo galerie ======*/
+.galerie {
+    display: flex;
+    justify-content: space-between;
+}
+.galerie__photo {
+    width: 25%;
+    border: 0;
+}
