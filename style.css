@@ -20,12 +20,67 @@ body {
     width: 100%;
     text-align: center;
     margin-bottom: 150px;
+    padding-top: 25px;
+    margin-top: -100px;
 }
 .header__logo_img {
     width: 150px;
     height: 150px;
 }
-
+.for_line {
+    position: relative;;
+}
+.for_line::after {
+    position: absolute;
+    content: "";
+    top: 100px;
+    left: 0;
+    width: 530px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.for_line::before {
+    position: absolute;
+    content: "";
+    top: 100px;
+    right: 0;
+    width: 530px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.for_line-vert {
+    position: relative;
+}
+.for_line-vert::after {
+    position: absolute;
+    content: "";
+    top: 100px;
+    left: 20%;
+    width: 1px;
+    height: 699px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.for_line-vert::before {
+    position: absolute;
+    content: "";
+    top: 100px;
+    right: 20%;
+    width: 1px;
+    height: 699px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.for_line--center{
+    position: relative;
+}
+.for_line--center::after {
+    position: absolute;
+    content: "";
+    top: 200px;
+    left: 50%;
+    width: 1px;
+    height: 599px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
 /* ====== intro ====== */
 .intro {
     display: flex;
@@ -38,11 +93,11 @@ body {
     text-align: center;
     font-style: normal;
     font-weight: 700; 
-    transform: rotate(270deg);
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    width: 60px;
 }
-.intro__content {
-    margin-left: -225px;
-}
+
 .intro__subtitle {
     font-weight: 700;
     text-align: center;
@@ -94,15 +149,12 @@ body {
 
 /* ====== nav ======= */
 .nav {
-    position: fixed;
-    top: 0;
     max-width: 1280px;  
     width: 100%;  
     margin: auto;
 
     }
 .nav__container {
-    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -117,13 +169,13 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
 .nav_right {
     width: 40%;
     display: flex;
     justify-content: space-between;
 }
 .nav__link {
-    position: relative;
     cursor: pointer;
     text-decoration: none;
     color: #FFFFFF;
@@ -280,6 +332,7 @@ body {
     justify-content: space-between;
 }
 .book_table__item {
+    box-sizing: border-box;
     width: 47%;
     height: 60px;
     font-size: 14px;
