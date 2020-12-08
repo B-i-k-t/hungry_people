@@ -5,6 +5,12 @@ body {
     position: relative;
 }
 
+/*======= anchor ======*/
+.anchor {
+    position: absolute;
+    margin-top: -30px;
+}
+
 /*======= header ======*/
 .header {
     height: 800px;
@@ -27,6 +33,8 @@ body {
     width: 150px;
     height: 150px;
 }
+
+/*======= for_line ======*/
 .for_line {
     position: relative;;
 }
@@ -60,6 +68,10 @@ body {
     height: 699px;
     background-color: rgba(255, 255, 255, 0.2);
 }
+.for_line--block::after {
+    top: 0;
+    height: 679px;
+}
 .for_line-vert::before {
     position: absolute;
     content: "";
@@ -68,6 +80,10 @@ body {
     width: 1px;
     height: 699px;
     background-color: rgba(255, 255, 255, 0.2);
+}
+.for_line--block::before {
+    top: 0;
+    height: 679px;
 }
 .for_line--center{
     position: relative;
@@ -80,6 +96,10 @@ body {
     width: 1px;
     height: 599px;
     background-color: rgba(255, 255, 255, 0.2);
+}
+.for_line--center--block::after {
+    top: 0;
+    height: 679px;
 }
 /* ====== intro ====== */
 .intro {
@@ -97,7 +117,6 @@ body {
     transform: rotate(180deg);
     width: 60px;
 }
-
 .intro__subtitle {
     font-weight: 700;
     text-align: center;
@@ -109,7 +128,6 @@ body {
     text-align: center;
     text-transform: uppercase;
 }
-
 .intro__buttons {
     display: flex;
     justify-content: center;
@@ -152,8 +170,7 @@ body {
     max-width: 1280px;  
     width: 100%;  
     margin: auto;
-
-    }
+}
 .nav__container {
     display: flex;
     flex-wrap: wrap;
@@ -163,13 +180,12 @@ body {
     line-height: 100px;
     font-size: 12px;
     font-weight: 700;    
-    }
+}
 .nav_left {
     width: 40%;
     display: flex;
     justify-content: space-between;
 }
-
 .nav_right {
     width: 40%;
     display: flex;
@@ -232,21 +248,43 @@ body {
     max-width: 475px;
     height: auto;
     padding-right: 125px; 
+    margin-left: 40px;
 }
 .block__image {    
-    filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
-    border-radius: 5px;  
+    border-radius: 5px;
+    overflow: hidden;  
 }
 
 .block__img--left {
     text-align: left;
+    margin-left: 0;
 }
 .block__image--left {
-    filter: drop-shadow(0px 0px 50px #000000);
     padding-left: 125px;
     padding-right: 0;
 }
-
+.block__title {
+    position: absolute;
+    top: 0;    
+    font-size: 24px;
+    line-height: 80px;
+    align-items: center;
+    text-align: left;
+    text-indent: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #000000;
+    width: 80px;
+    height: 100%;
+    writing-mode: vertical-lr;
+}
+.block__title--right {
+    right: 0;
+}
+.block__title--left {
+    left: 0;
+    transform: rotate(180deg);
+}
 /* ====== square ======*/
 .square {
     position: absolute;
@@ -257,7 +295,7 @@ body {
     height: 250px;
     border: 20px solid #E8C300;
     box-sizing: border-box;
-    filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
     border-radius: 5px;   
     z-index: 2; 
 }
@@ -292,7 +330,6 @@ body {
     font-size: 18px;
     line-height: 1.56px;
 }
-
 .block--white {
     color: #FFFFFF;
 }
@@ -389,7 +426,22 @@ body {
 }
 .specialties__content {
     display: flex;
-    padding-bottom: 100px;
+    padding-bottom: 45px;
+}
+.slider {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 45px;
+}
+.slider__btn {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 12.5px;
+    background: rgba(255, 255, 255, 0.5);
+}
+.slider__btn--active {
+    background: #FFFFFF;
 }
 
 /* ====== menu ======*/
@@ -426,7 +478,6 @@ body {
 .menu__list_item {
     width: 30%;
     display: flex;
-
 }
 .menu__dish_title {
     font-size: 18px;
@@ -527,6 +578,7 @@ body {
     padding: 5px 5px;
     border: 0;
     background: #E5E5E5;
+    resize: none;
 }
 .contact__textarea::placeholder {
     padding-top: 5px;
@@ -574,4 +626,23 @@ body {
     text-align: center;
     color: rgba(255, 255, 255, 0.5);
     margin-top: -5px;
+}
+
+/*======= btn__top ======*/
+.btn__top {
+    position: fixed;
+    right: 45px;
+	bottom: 45px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: #FFFFFF;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #333333;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    text-decoration: none;
 }

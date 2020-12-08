@@ -20,20 +20,21 @@
             <nav class="nav">
                 <div class="nav__container">
                     <div class="nav_left">
-                        <a href="#" class="nav__link">Home</a>
-                        <a href="#" class="nav__link">About</a>
-                        <a href="#" class="nav__link">Team</a>
-                        <a href="#" class="nav__link">Booking</a>
+                        <a href="#home" class="nav__link">Home</a>
+                        <a href="#about" class="nav__link">About</a>
+                        <a href="#team" class="nav__link">Team</a>
+                        <a href="#booking" class="nav__link">Booking</a>
                     </div>                    
                     <div class="nav_right">
-                        <a href="#" class="nav__link">Menu</a>
-                        <a href="#" class="nav__link">Galerie</a>
-                        <a href="#" class="nav__link">Events</a>
-                        <a href="#" class="nav__link">Contact</a>
+                        <a href="#menu" class="nav__link">Menu</a>
+                        <a href="#galerie" class="nav__link">Galerie</a>
+                        <a href="#events" class="nav__link">Events</a>
+                        <a href="#contact" class="nav__link">Contact</a>
                     </div>
                 </div>                               
-            </nav>      
-            <div class="header__logo">
+            </nav>   
+            <a name="home" class="anchor"></a>   
+            <div class="header__logo">                
                 <img class="header__logo_img" src="/img/logo.svg" alt="logo">
             </div>
             <div class="intro">
@@ -70,9 +71,9 @@
         </div> <!-- container end -->       
     </header>
     <main>
-
+        <a name="about" class="anchor"></a>
         <!-- ABOUT -->
-        <dsection class="about">
+        <section class="about">            
             <div class="container">
                 <div class="about__us">
                     <div class="block_text__content">
@@ -103,11 +104,15 @@
                     </div>                    
                 </div> <!-- about__us end -->
             </div> <!-- container end -->  
-        </dsection> <!-- about end -->
+        </section> <!-- about end -->
 
         <!-- TEAM -->
+        <a name="team" class="anchor"></a>
         <section class="team">
             <div class="container">
+                <div class="for_line-vert for_line--block">
+                    <div class="for_line--center for_line--center--block"></div>
+                </div>
                 <h3 class="team__title">
                     Our team
                 </h3>
@@ -143,6 +148,7 @@
         </section> <!--team end -->  
 
         <!-- BOOKING -->
+        <a name="booking" class="anchor"></a>
         <section class="booking">
             <div class="container">
                 <div class="order">
@@ -190,6 +196,9 @@
         <!-- SPECIALTIES -->
         <section class="specialties">
             <div class="container">
+                <div class="for_line-vert for_line--block">
+                    <div class="for_line--center for_line--center--block"></div>
+                </div>
                 <h3 class="specialties__title">
                     specialties
                 </h3>
@@ -221,10 +230,16 @@
                         </div>
                     </div> <!-- block_text__content end -->
                 </div><!-- specialties__content end -->
+                <div class="slider">
+                    <div class="slider__btn"></div>
+                    <div class="slider__btn slider__btn--active"></div>
+                    <div class="slider__btn"></div>
+                </div>
             </div> <!-- container end -->  
         </section> <!-- specialties end-->
 
         <!-- MENU -->
+        <a name="menu" class="anchor"></a>
         <section class="menu">
             <div class="container">
                 <div class="block_text__title">
@@ -529,8 +544,12 @@
         </section> <!-- menu end -->
 
         <!-- PRIVATE EVENTS -->
+        <a name="events" class="anchor"></a>
         <section class="events">
             <div class="container">
+                <div class="for_line-vert for_line--block">
+                    <div class="for_line--center for_line--center--block"></div>
+                </div>
                 <h3 class="events__title">
                     PRIVATE EVENTS
                 </h3>
@@ -539,12 +558,18 @@
                         <div class="block__img block__img--left">
                             <div class="square square--left"></div>
                             <img src="/img/private-events1.jpg" alt="specialties" class="block__image block__image--left">
+                            <div class="block__title block__title--right">
+                                <p>weddings</p>
+                            </div>
                         </div> <!-- block__img end -->
                     </div>
                     <div class="block__image_container">
                         <div class="block__img">
                             <img src="/img/private-events2.jpg" alt="book a table" class="block__image">
                             <div class="square"></div>
+                            <div class="block__title block__title--left">
+                                <p>corporate pzrties</p>
+                            </div>
                         </div> <!-- block__img end -->
                     </div>           
                 </div> <!-- events__content end -->
@@ -555,6 +580,7 @@
         </section> <!-- events end -->
 
         <!-- PHOTO GALERIE-->
+        <a name="galerie" class="anchor"></a>
         <section class="galerie">
             <div class="galerie__photo">
                 <img src="/img/photogallery1.jpg" alt="photo in galerie">
@@ -571,6 +597,7 @@
         </section> <!-- galerie end -->
 
         <!-- CONTACT -->
+        <a name="contact" class="anchor"></a>
         <section class="contact">
             <div class="container">
                 <div class="block_text__title">
@@ -608,5 +635,6 @@
             © Copyright Mindblister  2019
         </p>
     </footer>
+    <a href="#" class="btn__top"> &#5169 </a>
 </body>
 </html>
