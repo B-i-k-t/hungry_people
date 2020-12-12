@@ -605,11 +605,16 @@ body {
     height: 60px;
     font-weight: 700;
     font-size: 1.2rem;
-    line-height: 60px;
+    line-height: 1.2;
     text-align: center;
     color: rgba(51, 51, 51, 0.5);
     border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
 }
+
 .contact__btn {
     width: 50%;
     height: 60px;
@@ -798,6 +803,18 @@ body {
         top: 180px;
         height: 520px;
     }
+    .for_line--block::after {
+        top: 0;
+        height: 679px;
+    }
+    .for_line--block::before {
+        top: 0;
+        height: 679px;
+    }
+    .for_line--center--block::after {
+        top: 0;
+        height: 679px;
+    }
      .social__item {
         width: 40px;
         height: 40px;
@@ -900,6 +917,13 @@ body {
         line-height: 50px;
         width: 50px;
     }
+    .contact {
+        padding: 60px 5px;
+    }
+    .btn__top {
+        right: 25px;
+        bottom: 25px;
+    }
 }
 
 
@@ -960,6 +984,30 @@ body {
         flex-wrap: wrap;
         justify-content:center;
     }
+    .contact__input {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .contact__textarea {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .contact__adress {
+        width: 100%;
+        order: 2;
+    }
+    .contact__btn {
+        width: 100%;
+    }
+    .for_line--block::after {
+        height: 962px;
+    }
+    .for_line--block::before {
+        height: 962px;
+    }
+    .for_line--center--block::after {
+        height: 962px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -981,7 +1029,7 @@ body {
         width: 44%;
     }
     
-    .intro__title{
+    .intro__title {
         font-size: 3rem;
     }
     .intro__buttons {
@@ -1027,4 +1075,14 @@ body {
         padding-left: 3px;
         font-size: 1.3rem;
     }
+    .for_line--block::after {
+        height: 802px;
+    }
+    .for_line--block::before {
+        height: 802px;
+    }
+    .for_line--center--block::after {
+        height: 802px;
+    }
+}
 }
