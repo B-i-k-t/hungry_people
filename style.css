@@ -345,7 +345,7 @@ body {
 
 /* ====== team ======*/
 .team {
-    background: url(/img/team-back.png) 50% 50% no-repeat fixed;
+    background: url(img/team-back.png) 50% 50% no-repeat fixed;
     background-size: cover;
 }
 .team__title {
@@ -420,7 +420,7 @@ body {
 
 /* ====== specialties ======*/
 .specialties {
-    background: url(/img/specialtys-bg.png) 50% 50% no-repeat fixed;
+    background: url(img/specialtys-bg.png) 50% 50% no-repeat fixed;
     background-size: cover;
 }
 .specialties__title {
@@ -508,7 +508,7 @@ body {
 
 /* ====== private events ======*/
 .events {
-    background: url(/img/specialtys-bg.png) 50% 50% no-repeat fixed;
+    background: url(img/specialtys-bg.png) 50% 50% no-repeat fixed;
     background-size: cover;
 }
 .events__title {
