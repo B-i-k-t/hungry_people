@@ -614,7 +614,9 @@ body {
     justify-content: left;
     align-items: center;
 }
-
+.contact__adress_item {
+    padding-right: 2px;
+}
 .contact__btn {
     width: 50%;
     height: 60px;
