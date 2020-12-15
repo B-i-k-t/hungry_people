@@ -650,17 +650,21 @@ body {
     right: 45px;
 	bottom: 45px;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    background: #FFFFFF;
+    background-color: #E8C300;
+    transition: opacity .3s linear;
     font-weight: 900;
     font-size: 2rem;
     line-height: 30px;
     text-align: center;
-    color: #333333;
+    color: #FFFFFF;
     border-radius: 50%;
     width: 30px;
     height: 30px;
     cursor: pointer;
     text-decoration: none;
+}
+.btn__top:hover {
+    opacity: .7;
 }
 
 /*======= @media ======*/
