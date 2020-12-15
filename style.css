@@ -404,8 +404,7 @@ body {
 .order__btn_text {
     font-weight: 700;
     font-size: 1.2rem;
-    line-height: 1.67;
-    align-items: center;
+    line-height: 60px;
     text-align: center;
     color: #FFFFFF;
 }
@@ -1071,6 +1070,10 @@ body {
     .order__btn {
         height: 40px;
     }
+    .order__btn_text {
+        line-height: 40px;
+    }
+    
     .menu__dish_title {
         font-size: 1.3rem;
     }
