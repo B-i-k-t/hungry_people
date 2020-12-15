@@ -634,6 +634,12 @@ body {
     opacity: 0.7;
 }
 
+/* ====== map ======*/
+.map__frame {
+    width: 100%;
+    border: 0;
+}
+
 /* ====== Footer ======*/
 .footer {
     height: 100px;
