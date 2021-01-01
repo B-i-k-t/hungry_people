@@ -497,30 +497,89 @@ body {
     color: #FFFFFF;
     height: 100px;
 }
+
 .specialties__content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-bottom: 45px;
+    padding: 0 40px 45px;
+
 }
-.slider {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding-bottom: 45px;
+
+/* ====== slider ======*/
+.slider{  
+    position: relative;
 }
-.slider__btn {
-    width: 10px;
+.slider__item {
+    position: relative;
+    border: none !important;
+    box-shadow: none !important;
+ }
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    text-decoration: none;
+    color: white;
+    z-index: 3;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Кружочки под слайдами */
+.slider__dots {
+    text-align: center;
+}
+.slider__dots_item {
+    cursor: pointer;
     height: 10px;
+    width: 10px;
+    background-color: #ddd;
+    opacity: .5;
     border-radius: 50%;
-    margin: 0 12.5px;
-    background: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    transition: opacity 0.6s ease;
+    margin: 0 5px 45px 5px;
 }
-.slider__btn--active {
-    background: #FFFFFF;
+.active, .slider__dots_item:hover {
+    opacity: 1;
+}
+/* Анимация слайдов */
+.slider__item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
 }
 
 /* ====== menu ======*/
@@ -1078,10 +1137,10 @@ body {
         height: 600px;
         margin-bottom: 60px;
     }
-    .intro__title{
+    .intro__title {
         font-size: 4rem;
     }
-    .intro__btn{
+    .intro__btn {
         width: 100px;
         height: 41px;
         line-height: 2px;
@@ -1112,11 +1171,6 @@ body {
         height: 110px;
         border: 10px solid #E8C300;
     }
-    .slider__btn {
-        width: 7px;
-        height: 7px;
-        margin: 0 10px;
-    }
     .menu {
         padding: 60px 5px;
     }
@@ -1134,7 +1188,7 @@ body {
 }
 
 
-@media (max-width: 500px){
+@media (max-width: 500px) {
     .about__us {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
