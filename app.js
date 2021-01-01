@@ -1,3 +1,6 @@
+
+// slider
+
 let slideIndex = 1;
 showSlides(slideIndex);
  
@@ -36,4 +39,31 @@ function showSlides(n) {
     }
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
+}
+
+// menu
+
+let menuIndex = 2;
+showMenus(menuIndex);
+ 
+/* Устанавливает текущий слайд */
+function currentxMenu(n) {
+    showMenus(menuIndex = n);
+}
+ 
+/* Основная функция слайдера */
+function showMenus(n) {
+    let i;
+    let menu = document.getElementsByClassName("menu__list");
+    let link = document.getElementsByClassName("menu__link");
+    for (i = 0; i < menu.length; i++) {
+        menu[i].style.display = "none";
+    }
+    for (i = 0; i < link.length; i++) {
+        link[i].className = link[i].className.replace(" active_link", "");
+    }
+    menu[menuIndex - 1].style.display = " -webkit-box";
+    menu[menuIndex - 1].style.display = " -ms-flexbox";
+    menu[menuIndex - 1].style.display = " flex";
+    link[menuIndex - 1].className += " active_link";
 }
